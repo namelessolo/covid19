@@ -9,13 +9,13 @@ const Wrapper = styled.div`
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
 `;
 
 const Box = ({ date, amount, percent }) => {
   return (
     <Wrapper>
-      <p>{date}</p>
+      {date && <p>{date}</p>}
       <p>{amount}</p>
       <p>{percent}%</p>
     </Wrapper>

@@ -12,9 +12,10 @@ const WeekContainer = styled.div`
   margin: 0 auto;
 
   h1 {
-    padding-top: 100px;
+    padding-top: 50%;
     color: bisque;
-    font-size: 4rem;
+    font-size: 5rem;
+    align-items: center;
   }
 `;
 
