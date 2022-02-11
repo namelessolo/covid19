@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  min-width: 140px;
+  max-width: 392px;
   aspect-ratio: 1/1;
   background-color: bisque;
   display: flex;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 const Box = ({ date, amount, percent }) => {
   return (
     <Wrapper>
-      {date && <p>{date}</p>}
+      {date ? <p>{date}</p> : <p>Week Summary</p>}
       <p>{amount}</p>
       <p>{percent}%</p>
     </Wrapper>

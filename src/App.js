@@ -40,14 +40,8 @@ function App() {
 
   return (
     <WeekContainer>
-      {!data ? (
-        <h1>Loading...</h1>
-      ) : (
-        <>
-          <DaysListItems week={1} data={data} />
-          <DaysListItems week={2} data={data} />
-        </>
-      )}
+      <DaysListItems week={1} data={data} />
+      <DaysListItems week={2} data={data} />
     </WeekContainer>
   );
 }
